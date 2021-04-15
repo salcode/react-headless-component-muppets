@@ -1,13 +1,11 @@
-export default function MuppetList({Muppet, muppets}) {
+export default function MuppetList({muppets}) {
   return (
     <ul className="muppet-list">
     {
       muppets.map(
         muppet =>
           <li key={muppet.name}>
-            <Muppet
-              name={muppet.name}
-            />
+            {muppet.name}
           </li>
       )
     }

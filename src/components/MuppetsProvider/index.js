@@ -21,7 +21,7 @@ export default function MuppetsProvider({children}) {
     },
   ];
 
-  // Add "muppets" prop to each child in children.
+  // Add "muppets" prop to each children
   const childrenWithMuppetsProp = React.Children.map(
     children,
     (child) => {
