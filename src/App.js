@@ -1,13 +1,12 @@
 import './App.css';
-import MuppetsProvider from './components/MuppetsProvider';
 import MuppetList from './components/MuppetList';
+import withMuppets from './components/withMuppets';
 
 function App() {
+  const MuppetListWithMuppets = withMuppets(MuppetList);
   return (
     <div className="App">
-      <MuppetsProvider>
-        <MuppetList />
-      </MuppetsProvider>
+      <MuppetListWithMuppets />
     </div>
   );
 }
