@@ -1,18 +1,14 @@
 import './App.css';
 import MuppetsProvider from './components/MuppetsProvider';
+import MuppetList from './components/MuppetList';
+import Muppet from './components/Muppet';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Headless Components
-        </p>
-      </header>
-      <MuppetProvider>
-        <h1>Muppets</h1>
-        <p>lorem ipsum</p>
-      </MuppetProvider>
+      <MuppetsProvider>
+        <MuppetList Muppet={Muppet} />
+      </MuppetsProvider>
     </div>
   );
 }

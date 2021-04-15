@@ -15,3 +15,8 @@
 .App-link {
   color: #61dafb;
 }
+
+.muppet-list {
+  list-style: none;
+  padding: 0;
+}
